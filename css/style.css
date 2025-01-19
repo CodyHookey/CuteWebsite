@@ -92,3 +92,9 @@ body {
     transition: all 0.5s ease;
     z-index: 2;
 }
+
+@media (max-width: 390px) {
+    .header {
+        font-size: 4.5em;
+    }
+}
