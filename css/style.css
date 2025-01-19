@@ -61,7 +61,7 @@ body {
 
 .btn {
     position: absolute;
-    top: calc(100% - 8rem);
+    top: calc(70% - 5rem);
     min-width: 120px;
     padding: .75rem 1rem;
     font-size: 1.5rem;
@@ -70,14 +70,13 @@ body {
     border-radius: 0.25em;
     cursor: pointer;
     outline: none;
-    border: none;
+    border: 3px solid #ffa69e;
     transition: 0.3s;
 }
 
 .btn:hover {
     background-color: #faf3dd;
     color: #ffa69e;
-    border: 2px solid #ffa69e;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
 }
 

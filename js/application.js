@@ -1,20 +1,12 @@
-var container = document.querySelector(".container");
-
-var imageOne = document.querySelector(".image-1");
-var imageTwo = document.querySelector(".image-2");
-
-var btnYes = document.querySelector(".btn-yes");
-var btnNo = document.querySelector(".btn-no");
-
 $(document).ready(function() {
     $('.btn-no').on('click', function() {
         // Get container dimensions
-        const containerWidth = $('.container').width();
-        const containerHeight = $('.container').height();
+        var containerWidth = $('.container').width();
+        var containerHeight = $('.container').height();
 
         // Generate random positions within container boundaries
-        const randomX = Math.random() * (containerWidth - $(this).outerWidth());
-        const randomY = Math.random() * (containerHeight - $(this).outerHeight());
+        var randomX = Math.random() * (containerWidth - $(this).outerWidth());
+        var randomY = Math.random() * (containerHeight - $(this).outerHeight());
 
         // Move button to random position
         $(".btn-no").css({
