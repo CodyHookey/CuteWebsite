@@ -3,7 +3,8 @@ var yesButton = function () {
         $(this).text("Celebrate");
 
         $(".image-1, .btn-no").addClass("hide");
-        $(".image-2, .header-2").removeClass("hide");
+        $(".image-2").removeClass("hide");
+        $(".header").text("Yay you will be mine forever! ❤️")
 
         $("#audio")[0].play();
         $(".btn-pause").removeClass("hide");
