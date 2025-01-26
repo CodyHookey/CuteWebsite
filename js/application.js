@@ -37,6 +37,8 @@ $(document).ready(function() {
         $(".header-2").removeClass("hide");
         $(".btn-no").addClass("hide");
 
+        $(this).text("Celebrate")
+
         $("#audio")[0].play();
         $(".btn-pause").removeClass("hide");
 
