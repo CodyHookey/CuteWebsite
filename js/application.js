@@ -16,11 +16,25 @@ $(document).ready(function() {
     });
 
     $(".btn-yes").on("click", function() {
-        $(".image-1").toggleClass("hide");
-        $(".image-2").toggleClass("hide");
-        $(".header-2").toggleClass("hide");
+        $(".image-1").addClass("hide");
+        $(".image-2").removeClass("hide");
+        $(".header-2").removeClass("hide");
+        $(".btn-no").addClass("hide");
 
         $("#audio")[0].play();
+        $(".btn-pause").removeClass("hide");
+
+        $(".btn-pause").on("click", function () {
+            var audio = $("#audio")[0];
+
+            if (!audio.paused) {
+                audio.pause();
+                $(this).text("Play");
+            } else {
+                audio.play();
+                $(this).text("Pause");
+            }
+        });
 
         confetti({
             particleCount: 100,

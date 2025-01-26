@@ -92,6 +92,12 @@ body {
     z-index: 2;
 }
 
+.btn-pause {
+    left: calc(50% + 1rem);
+    transition: all 0.5s ease;
+    z-index: 2;
+}
+
 @media (max-width: 650px) {
     .header {
         font-size: 4.5em;
