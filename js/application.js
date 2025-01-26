@@ -19,5 +19,7 @@ $(document).ready(function() {
         $(".image-1").toggleClass("hide");
         $(".image-2").toggleClass("hide");
         $(".header-2").toggleClass("hide");
+        
+        $("#audio")[0].play();
     });
 });
