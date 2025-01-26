@@ -1,5 +1,21 @@
 $(document).ready(function() {
+    var noCounter = 0;
+
     $('.btn-no').on('click', function() {
+        noCounter ++;
+
+        switch (noCounter) {
+            case 1:
+                $(".btn-no").text("Really 🥺");
+                break;
+            case 2:
+                $(".btn-no").text("Don't press 😡");
+                break;
+            case 3:
+                $(".btn-no").addClass("hide");
+                break;
+        }
+
         // Get container dimensions
         var containerWidth = $('.container').width();
         var containerHeight = $('.container').height();
