@@ -20,6 +20,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: pink;
 }
 
 .header {
@@ -30,7 +31,7 @@ body {
     margin-inline: auto;
     filter: drop-shadow(5px 5px 20px rgba(0, 0, 0, 0.2));
     font-size: 6em;
-    color: #ffa69e;
+    color: red;
     text-align: center;
 }
 
@@ -41,7 +42,7 @@ body {
     margin-inline: auto;
     filter: drop-shadow(5px 5px 20px rgba(0, 0, 0, 0.2));
     font-size: 3em;
-    color: #ffa69e;
+    color: red;
 }
 
 .container {
@@ -67,17 +68,16 @@ body {
     padding: .75rem 1rem;
     font-size: 1.5rem;
     background-color: #faf3dd;
-    color: #ffa69e;
+    color: red;
     border-radius: 0.25em;
     cursor: pointer;
     outline: none;
-    border: 3px solid #ffa69e;
+    border: 3px solid red;
     transition: 0.3s;
 }
 
 .btn:hover {
     background-color: #faf3dd;
-    color: #ffa69e;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
 }
 

@@ -4,11 +4,11 @@ var yesButton = function () {
 
         $(".image-1, .btn-no").addClass("hide");
         $(".image-2").removeClass("hide");
-        $(".header").text("Yay you will be mine forever! ❤️")
+        $(".header").text("I will love you for the rest of my life ❤️");
 
         $("#audio")[0].play();
         $(".btn-pause").removeClass("hide");
-
+        
         confetti({
             particleCount: 100,
             spread: 70,
