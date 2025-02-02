@@ -1,3 +1,5 @@
+var yesCounter = 0;
+
 var yesButton = function () {
     $(".btn-yes").on("click", function() {
         $(this).text("Celebrate");
@@ -8,6 +10,15 @@ var yesButton = function () {
 
         $("#audio")[0].play();
         $(".btn-pause").removeClass("hide");
+
+        if (yesCounter < 1) {
+            $(".modal").removeClass("hide");
+            $(".btn-close").on("click", function () {
+                $(".modal").addClass("hide");
+            });
+        }
+
+        yesCounter++;
         
         confetti({
             particleCount: 100,
@@ -16,6 +27,8 @@ var yesButton = function () {
         });
     });
 }
+
+
 
 var pauseButton = function () {
     $(".btn-pause").on("click", function () {
